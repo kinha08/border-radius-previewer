@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border-radius Previewer</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <h1>Border Radius</h1>
+        <div id="shape"></div>
+        <input type="text" name="code" id="code" disabled>
+        <div id="radius-values">
+            <h2>Border Radius Values</h2>
+
+            <label for="horizontal">
+                <input type="checkbox" name="horizontal" id="horizontal" checked>
+                Horizontal
+            </label>
+            <label>Top</label>
+            <input class="slider" type="range" name="radius_top" id="radius_top" min="0" max="100" value="50" /> 
+            <span>50</span>
+            <label>Right</label>
+            <input class="slider" type="range" name="radius_right" id="radius_right" min="0" max="100" value="50" /> 
+            <span>50</span>
+            <label>Bottom</label>
+            <input class="slider" type="range" name="radius_bottom" id="radius_bottom" min="0" max="100" value="50" /> 
+            <span>50</span>
+            <label>Left</label>
+            <input class="slider" type="range" name="radius_left" id="radius_left" min="0" max="100" value="50" /> 
+            <span>50</span>
+
+            <label for="vertical">
+                <input type="checkbox" name="vertical" id="vertical">
+                Vertical
+            </label>
+            <label>Top</label>
+            <input class="slider" type="range" name="radius_top_vertical" id="radius_top_vertical" min="0" max="100" value="50" /> 
+            <span>50</span>
+            <label>Right</label>
+            <input class="slider" type="range" name="radius_right_vertical" id="radius_right_vertical" min="0" max="100" value="50" /> 
+            <span>50</span>
+            <label>Bottom</label>
+            <input class="slider" type="range" name="radius_bottom_vertical" id="radius_bottom_vertical" min="0" max="100" value="50" /> 
+            <span>50</span>
+            <label>Left</label>
+            <input class="slider" type="range" name="radius_left_vertical" id="radius_left_vertical" min="0" max="100" value="50" /> 
+            <span>50</span>
+        </div>
+    </div>
+    <script src="./src/main.js"></script>
+</body>
+</html>
